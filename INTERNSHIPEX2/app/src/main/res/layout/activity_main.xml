@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input:"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_input"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:hint="Enter input string"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/text_view_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_input"
+        android:text="Enter N:"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_n"
+        android:hint="Enter number of characters to reverse"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/text_view_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_n"
+        android:text="Output:"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_output"
+        android:hint="Output will be shown here"
+        android:inputType="text"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/button_reverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reverse"
+        android:textSize="24sp"
+        android:layout_below="@id/edit_text_output"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>
